@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="title">天气 Agent</view>
+  <view class="subtitle">支持城市查询和当前位置天气</view>
+
+  <textarea
+    class="input"
+    placeholder="请输入问题，例如：成都今天天气怎么样？"
+    value="{{message}}"
+    bindinput="onMessageChange"
+  />
+
+  <view class="row">
+    <button class="btn secondary" bindtap="useCurrentLocation" loading="{{locating}}">
+      使用当前位置
+    </button>
+    <button class="btn primary" bindtap="queryWeather" loading="{{loading}}">
+      查询天气
+    </button>
+  </view>
+
+  <view wx:if="{{locationText}}" class="location">{{locationText}}</view>
+
+  <view wx:if="{{result}}" class="card">
+    <view class="label">智能体回答</view>
+    <view class="content">{{result.punny_response}}</view>
+    <view wx:if="{{result.weather_conditions}}" class="label">天气详情</view>
+    <view wx:if="{{result.weather_conditions}}" class="content">{{result.weather_conditions}}</view>
+  </view>
+</view>

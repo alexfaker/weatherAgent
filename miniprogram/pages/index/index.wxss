@@ -1,0 +1,72 @@
+.container {
+  padding: 32rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.subtitle {
+  margin-top: 8rpx;
+  color: #64748b;
+  font-size: 26rpx;
+}
+
+.input {
+  width: 100%;
+  margin-top: 28rpx;
+  min-height: 180rpx;
+  padding: 20rpx;
+  border-radius: 16rpx;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  gap: 20rpx;
+  margin-top: 24rpx;
+}
+
+.btn {
+  flex: 1;
+  border-radius: 14rpx;
+  font-size: 28rpx;
+}
+
+.btn.primary {
+  background: #1677ff;
+  color: #ffffff;
+}
+
+.btn.secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.location {
+  margin-top: 20rpx;
+  color: #475569;
+  font-size: 24rpx;
+}
+
+.card {
+  margin-top: 28rpx;
+  padding: 24rpx;
+  border-radius: 16rpx;
+  background: #ffffff;
+}
+
+.label {
+  color: #64748b;
+  font-size: 24rpx;
+  margin-bottom: 8rpx;
+}
+
+.content {
+  color: #0f172a;
+  line-height: 1.7;
+  margin-bottom: 16rpx;
+}

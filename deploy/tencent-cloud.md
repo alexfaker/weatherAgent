@@ -34,7 +34,7 @@ DEEPSEEK_API_KEY=your_deepseek_key
 docker run -d \
   --name weather-agent \
   --restart unless-stopped \
-  -p 127.0.0.1:8000:8000 \
+  -p 127.0.0.1:8081:8081 \
   --env-file /opt/weather-agent/prod.env \
   weather-agent:latest
 ```
@@ -42,7 +42,7 @@ docker run -d \
 健康检查：
 
 ```bash
-curl http://127.0.0.1:8000/health
+curl http://127.0.0.1:8081/health
 ```
 
 ## 3. 配置 Nginx 与 HTTPS

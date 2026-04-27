@@ -1,4 +1,14 @@
-const BASE_URL = "https://weather-api.example.com";
+/*
+ * @Author: Anderson
+ * @Date: 2026-04-27 21:36:19
+ * @LastEditors: Anderson 5487748+flyanderson@user.noreply.gitee.com
+ * @LastEditTime: 2026-04-27 21:53:12
+ * @FilePath: /langchainDemo/miniprogram/pages/index/index.js
+ * @Description: 
+ * 
+ * Copyright (c) 2026 by ${git_name}, All Rights Reserved. 
+ */
+const BASE_URL = "https://money.flashwave.cn/agent/weather";
 
 function getThreadId() {
   const key = "threadId";
